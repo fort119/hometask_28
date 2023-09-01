@@ -75,7 +75,7 @@ function check1() {
           buyBtn.addEventListener('click', function () {
             const productInfo = listOfGoodsFromCategory.find(product => product.name === name);
             alert(`You've bought ${productInfo.name}!`);
-            window.location.href = 'http://127.0.0.1:5500/'
+            window.location.href = 'https://fort119.github.io/hometask_28/'
           })
 
 
