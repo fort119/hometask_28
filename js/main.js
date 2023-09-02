@@ -58,7 +58,7 @@ function check1() {
       div.classList.add("category__item")
       div.innerHTML = `
       <p class="category__item-descr">${name}</p>
-      <div><img src="assets/images/${listOfGoodsFromCategory.find(product => product.name === name).picture}" width = "200px" height = "200px"></div>
+      <div><img src="assets/images/${listOfGoodsFromCategory.find(product => product.name === name).picture}" width = "200px" height = "200px" alt = "picture"></div>
       <div class="category__item-btn">
         <button class = "btn">Details</button>
       </div>
@@ -84,7 +84,7 @@ function check1() {
           aboutProduct.innerHTML = `
           <h2>${name}</h2>
           <p>Price: ${listOfGoodsFromCategory.find(product => product.name === name).price}$</p>
-          <div><img src="assets/images/${listOfGoodsFromCategory.find(product => product.name === name).picture}" width = "256px"></div>
+          <div><img src="assets/images/${listOfGoodsFromCategory.find(product => product.name === name).picture}" width = "256px" alt = "picture"></div>
           <p>About: ${listOfGoodsFromCategory.find(product => product.name === name).about}</p>
           `;
           aboutProduct.appendChild(buyBtn);
